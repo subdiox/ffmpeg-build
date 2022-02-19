@@ -34,7 +34,7 @@ wget https://github.com/videolan/x265/archive/refs/heads/master.zip -O x265-mast
 unzip x265-master.zip
 cd x265-master
 cd build/linux
-./make-Makefiles.bash # ここでstaticをONにする
+./make-Makefiles.bash
 make install
 ```
 ### Build fdk-aac
@@ -45,6 +45,9 @@ cd fdk-aac-2.0.2
 ./configure
 make install
 ```
+
+ここで `export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"` が実行されていることを確認する
+
 ### Build FFmpeg
 ```
 wget https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
