@@ -47,6 +47,7 @@ make install
 ```
 
 ここで `export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"` が実行されていることを確認する
+`/etc/ld.so.conf.d/usr-local-lib.conf`に`/usr/local/lib`を追加
 
 ### Build FFmpeg
 ```
